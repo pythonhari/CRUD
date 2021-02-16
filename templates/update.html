@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <div class="container" align="center">
+    <form method="POST">
+    <h1>Update Employee...</h1>
+       <table border="2">
+           {{ uform }}
+    {% csrf_token %}
+       </table>
+    <input  class="btn btn-success" type="submit" value="Update">
+    <a href="/retrieve"> Employee Info</a>
+{% endblock %}

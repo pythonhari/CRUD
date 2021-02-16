@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <div class="container" align="center">
+    <form method="POST">
+    <h1>Insert New Employee...</h1>
+       <table border="2">
+           {{ form }}
+    {% csrf_token %}
+
+   </div><br>
+    </table><br>
+    <input type="submit" class="btn btn-success btn-lg" value="Submit Record">
+    <a  href="/retrieve" class="btn btn-primary btn-lg">Employee Info</a>
+    </form>
+{% endblock %}
